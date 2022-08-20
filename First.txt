@@ -1,0 +1,1 @@
+Get-AppxPackage -AllUsers | where-object {$_.name -notlike "*store*"} | where-object {$_.name -notlike "*calculator*"} | where-object {$_.name -notlike "*extensions*"} | where-object {$_.name -notlike "*photos*"} | where-object {$_.name -notlike "*xbox*"} | where-object {$_.name -notlike "*skype*"} | Remove-AppxPackage
